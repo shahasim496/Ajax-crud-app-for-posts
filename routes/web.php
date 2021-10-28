@@ -20,6 +20,11 @@ Route::get('/', function () {
 });
 
 
+Route::get('/', function () {
+    return view('welcome');
+});
+
+
 
 // Resource Route for article.
 Route::resource('articles', ArticleController::class);
